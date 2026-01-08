@@ -28,15 +28,15 @@
 
 
 // System numbers
-#define WINDOW_NAME "Tic-tac-toe on SDL"   // System game name
+#define WINDOW_NAME "SandSim on SDL"   // System game name
 
 // Base file names
 // File with all GFX
 #if (PRELOAD_DATA)
-#define DATA_FILE "data-tic-tac-toe.dat"
+#define DATA_FILE "data-sand-sim.dat"
 #endif
 
 // File with all saved data (language, settings, volumes...)
 #if USE_SETTING_FILE
-#define SETTING_FILE "settings-tic-tac-toe.ini"
+#define SETTING_FILE "settings-sand-sim.ini"
 #endif

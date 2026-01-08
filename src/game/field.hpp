@@ -5,22 +5,20 @@
 
 #pragma once
 
-#include "cube.hpp"
-#include "cubeTexture.hpp"
+#include "pixel.hpp"
 
 
 class Field {
 private:
     const Window& window;
-    const int width, height;
-    const CubeTexture texture;
-    Cube* field;
-    float* temp;
+    static const int width = 20, height = 20;
+    const Pixel grid[height][width];
+    const Pixel temp[height][width];
     float size = 20.0;
     bool clicking = false;
 
 public:
-    Field(const Window& window, int width, int height);
+    Field(const Window& window);
     ~Field();
     SDL_Point getRelativePos();
     bool isValid(SDL_Point point);

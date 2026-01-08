@@ -6,19 +6,13 @@
 #include "field.hpp"
 
 
-Field::Field(const Window& _window, int _width, int _height)
-: window(_window),
-width(_width),
-height(_height),
-texture(_window) {
-    field = new Cube[width*height];
-    temp = new float[width*height];
+Field::Field(const Window& _window)
+: window(_window) {
     reset();
 }
 
 Field::~Field() {
-    delete[] field;
-    delete[] temp;
+    
 }
 
 void Field::reset() {
